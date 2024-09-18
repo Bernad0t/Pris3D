@@ -4,30 +4,8 @@ from pydantic import EmailStr
 from sqlalchemy import ForeignKey
 from project.BaseData.engine import Base
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from project.BaseData.Enums.for_models import ResultPurchase, UserStatus, TypeService, TypeGoods
-
-
-class DataSiteOrm(Base):
-    __tablename__ = "DataSite"
-
-    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
-    Mobile: Mapped[str | None]
-    Gmail: Mapped[Optional[str]]
-    Address: Mapped[str | None]
-    Card: Mapped[str | None]
-
-
-class UsersOrm(Base):
-    __tablename__ = "Users"
-
-    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
-    Login: Mapped[str]
-    Password: Mapped[str]
-    Address: Mapped[str | None]
-    Gmail: Mapped[Optional[str]]
-    Mobile: Mapped[str | None]
-    Card: Mapped[str | None]
-    Status: Mapped[UserStatus] # админ или юзер
+from project.BaseData.Enums.for_models import ResultPurchase, TypeService, TypeAutoParts, Catalog, WayDeliveryEnum
+from ..Models.user import UsersOrm
 
 
 class GoodsServiceOrm(Base):
@@ -36,31 +14,42 @@ class GoodsServiceOrm(Base):
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     Name: Mapped[str]
     TypeService: Mapped[TypeService] # услуга(3д печать) или товар
-    TypeGoods: Mapped[TypeGoods | None] # авто или мото или 3д принтер или ничего (если услуга)
-    Price: Mapped[int]
+    Catalog: Mapped[Catalog]
+    TypeGoods: Mapped[TypeAutoParts | None] # авто или мото или ничего (если принтер)
+    Article: Mapped[str | None]
+    Description: Mapped[str | None]
+    Mark: Mapped[str | None]
+    Price: Mapped[float]
     img: Mapped[str]
-    # мб стоит сделать марку????
+
     order_user: Mapped[list["OrderOrm"]] = relationship(
-        back_populates="goods",
+        back_populates="goods_in_basket",
         secondary="Baskets"
     )
 
 
-class OrderOrm(Base):
+class OrderOrm(Base): #  по результату найду все корзины
     __tablename__ = "Order"
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     Users_id: Mapped[int] = mapped_column(ForeignKey("Users.id", ondelete="SET NULL"))
-    DatePayment: Mapped[datetime.date]
-    DateReciept: Mapped[datetime.date]
+    DatePayment: Mapped[datetime.date | None]
+    DateReciept: Mapped[datetime.date | None]
     ResultPurchase: Mapped[ResultPurchase]
+    Discount: Mapped[float] = 0
+    PriceDelivery: Mapped[float] = 0
     TotalPrice: Mapped[float]
+    WayDelivery: Mapped[WayDeliveryEnum | None]
 
-    goods: Mapped[list["GoodsServiceOrm"]] = relationship(
+    goods_in_basket: Mapped[list["GoodsServiceOrm"]] = relationship(
         back_populates="order_user",
         secondary="Baskets"
     )
-
+    baskets: Mapped[list["BasketsOrm"]] = relationship(
+        back_populates="order",
+        viewonly=True
+    )
+     #  мб добавить еще корзины
 
 class ReviewOrm(Base):
     __tablename__ = "Review"
@@ -77,4 +66,8 @@ class BasketsOrm(Base):
     Order_id: Mapped[int] = mapped_column(ForeignKey("Order.id", ondelete="SET NULL"))
     GoodsService_id: Mapped[int] = mapped_column(ForeignKey("GoodsService.id", ondelete="SET NULL"))
     Number: Mapped[int | None]
-    Review_id: Mapped[int | None] = mapped_column(ForeignKey("Review.id", ondelete="SET NULL"))
+
+    order: Mapped["OrderOrm"] = relationship(
+        back_populates="baskets",
+        viewonly=True
+    )

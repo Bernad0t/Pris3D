@@ -1,15 +1,17 @@
 import enum
 
 class ResultPurchase(enum.Enum):
-    delivering = "delivering"
-    delivered = "delivered"
-    taken = "taken"
-    returned = "returned"
+    delivering = "доставляется"
+    delivered = "доставлено"
+    taken = "забрано"
+    returned = "возвращено"
+    unpaid = "не оплачено"
 
 
 class TypeService(enum.Enum):
-    Goods = "Goods"
-    Service = "Service"
+    Goods = "Товар"
+    Scanning = "Сканирование"
+    Print3D = "3Д печать"
 
 
 class UserStatus(enum.Enum):
@@ -17,7 +19,23 @@ class UserStatus(enum.Enum):
     User = "User"
 
 
-class TypeGoods(enum.Enum):
-    Auto = "Auto"
-    Moto = "Moto"
-    Printer = "Printer"
+class Catalog(enum.Enum):
+    AutoParts = "Автозапчасти"
+    Printer = "Принтеры"
+
+
+class TypeAutoParts(enum.Enum):
+    Auto = "Автомобиль"
+    Moto = "Мотоцикл"
+    Other = "Другое"
+
+
+class SexEnum(enum.Enum):
+    Male = "Мужской"
+    Female = "Женский"
+    Not_describe = ""
+
+
+class WayDeliveryEnum(enum.Enum):
+    delivery = "доставка"
+    take = "самовывоз"
