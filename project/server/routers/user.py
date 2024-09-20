@@ -9,7 +9,7 @@ from typing_extensions import Annotated
 
 from project.BaseData.Utils.token import verify_token
 from project.BaseData.queries.user import get_user_contact, get_access_token, update_user_contact, get_user_favorite, \
-    set_user_favorite, delete_user_favorite, set_address, get_address, delete_address, update_address
+    set_user_favorite, delete_user_favorite, set_address, get_address, delete_address, update_address, exit_acc
 from project.BaseData.sqhemas.user import GetUserContactsDTO, UpdateUserContactsDTO, AddressContactsDTO, \
     AddAddressContactsDTO
 from project.exceptions import ADDRESS_ERROR
@@ -87,3 +87,8 @@ async def get_address_router(token: Annotated[str, Depends(verify_token)], respo
 @router.post("/deleteAddress")
 async def delete_address_router(token: Annotated[str, Depends(verify_token)], data: AddressContactsDTO):
     await delete_address(data, token)
+
+
+@router.get("/exitAcc")
+async def exit_acc_router(token: Annotated[str, Depends(verify_token)]):
+    await exit_acc(token)

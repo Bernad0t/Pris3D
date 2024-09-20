@@ -166,3 +166,13 @@ async def delete_address(data: AddressContactsDTO, token: dict):
         )
         await session.execute(query)
         await session.commit()
+
+
+async def exit_acc(token: dict):
+    async with async_session_factory() as session:
+        query = (
+            delete(RefreshTokenOrm)
+            .where(RefreshTokenOrm.User_id == token["id"])
+        )
+        await session.execute(query)
+        await session.commit()
