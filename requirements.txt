@@ -35,7 +35,7 @@ mdurl==0.1.2
 multidict==6.0.5
 orjson==3.10.3
 psycopg==3.1.18
-psycopg-binary==3.1.10
+psycopg-binary==3.1.12
 py-bcrypt==0.4
 pyasn1==0.6.0
 pycparser==2.22
