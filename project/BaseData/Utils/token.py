@@ -19,7 +19,7 @@ def verify_token(token: str) -> dict:
 def verify_token_admin(token: str) -> dict:
     try:
         decoded_token = jwt.decode(token, SECRET_KEY_TOKEN, ALGORITHM)
-        if decoded_token["Status"] == UserStatus.User.value: #  TODO заменить на admin
+        if decoded_token["Status"] == UserStatus.Admin.value: #  TODO заменить на admin
             return jwt.decode(token, SECRET_KEY_TOKEN, ALGORITHM)
         else:
             raise HTTPException(status_code=409, detail="X-Token header invalid")
