@@ -1,0 +1,8 @@
+.my_input{
+    height: 100%;
+    width: 100%;
+    padding-left: 5%;
+    background-color: #282727;
+    border: 1px solid #AFAFAF;
+    border-radius: 2px;
+}

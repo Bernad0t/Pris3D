@@ -1,0 +1,95 @@
+.contain_main div, .our_cases div, .contain_application div, .application div, .contain_description div, .other_application_field div, .input_fields div{
+    margin-top: 2%;
+  }
+  
+  .description_page{
+    font-size: 150%;
+    width: 100%;
+  }
+  
+  .cases{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .cases div{
+    width: 20%;
+    height: 30vh
+  }
+  
+  .cases div img{
+    width: 100%;
+    height: 100%
+  }
+  
+  .application{
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contain_description{
+    width: 48%;
+    height: 100%;
+  }
+  
+  .name_description div{
+    height: 8%;
+  }
+  
+  .contain_textarea{
+    height: 80%;
+    width: 100%;
+  }
+  
+  .contain_textarea textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 3%;
+  }
+  
+  .other_application_field{
+    height: 20%;
+  }
+  
+  .other_application_field div{
+    height: 40%;
+  }
+  
+  .input_fields{
+    width: 48%;
+    height: 100%
+  }
+  
+  .name_field{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .other_application_field input{
+    width: 45%;
+    height: 100%;
+    background-color: #282727;
+    border: 1px solid #AFAFAF;
+    border-radius: 20px;
+    padding-left: 2%;
+  }
+  
+  .get_application{
+    border-bottom: 1px solid #AFAFAF;
+    padding-bottom: 3%;
+  }
+  
+  #contain_send{
+    margin-top: 5%;
+    height: 8%;
+    width: 45%;
+  }
+
+  #scroll_but{
+    height: 30px;
+    width: 20%;
+    margin-top: 0%;
+  }

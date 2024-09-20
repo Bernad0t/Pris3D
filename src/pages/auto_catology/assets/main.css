@@ -1,0 +1,15 @@
+.main{
+    margin-left: 20%;
+    width: 80%;
+    height: 100%;
+    padding-left: 5%;
+  }
+  
+  .contain_cards{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+  }
+  

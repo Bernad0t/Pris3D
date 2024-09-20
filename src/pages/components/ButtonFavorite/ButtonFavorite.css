@@ -1,0 +1,17 @@
+.wrapper{
+    position: absolute;
+    width: 30px;
+    height: auto;
+    background: white;
+    background: transparent;
+}
+
+.wrapper img{
+    height: 100%;
+    width: 100%;
+    background: transparent
+}
+
+.wrapper:hover{
+    cursor: pointer;
+}

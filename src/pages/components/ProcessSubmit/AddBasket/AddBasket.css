@@ -1,0 +1,12 @@
+.addBasketButton, .addedBasketButton{
+  height: 100%;
+  width: 100%;
+  color: #000;
+  background-color: #D9D9D9;
+  border: None;
+  }
+
+.addedBasketButton{
+    background-color: rgba(52, 75, 245, 1);
+    color: #FFF;
+}

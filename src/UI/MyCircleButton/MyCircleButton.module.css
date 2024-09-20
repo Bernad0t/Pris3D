@@ -1,0 +1,19 @@
+.contain_select{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-width: 40px;
+    padding-top: 15px;
+}
+
+.button_selected, .button_not_selected{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    background-color: rgba(52, 75, 245, 1);
+}
+
+.button_not_selected{
+    background-color: #282727
+}

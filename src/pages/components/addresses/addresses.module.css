@@ -1,0 +1,40 @@
+.all_addr{
+    width: 100%;
+}
+
+.one_addr{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.info{
+    width: 100%;
+}
+
+.name_addr{
+    font-size: 1.1em;
+}
+
+.other_fields_info{
+    color: #AFAFAF;
+    font-size: 0.9em;
+}
+
+.contain_change_delete{
+    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contain_change{
+    width: 50%;
+    height: 100%;
+}
+
+.contain_delete{
+    width: 45%;
+    height: 100%;
+}

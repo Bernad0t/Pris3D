@@ -1,0 +1,26 @@
+.contain_all{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contain_choose{
+    width: 70%;
+}
+
+.contain_schedule{
+    width: 25%;
+}
+
+.one_choose{
+    width: 100%;
+    display: flex;
+}
+
+.one_choose_name{
+    font-size: 1.1em;
+}
+
+.schedule{
+    width: 100%;
+}

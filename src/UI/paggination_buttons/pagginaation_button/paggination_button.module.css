@@ -1,0 +1,8 @@
+.button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(52, 75, 245, 1);
+    color: rgba(52, 75, 245, 1);
+    font-size: 1.2em;
+}

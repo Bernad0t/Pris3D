@@ -1,0 +1,21 @@
+.hepl_nuv{
+    margin-bottom: 2%;
+    height: 30%;
+}
+
+.contain_details:hover{
+    cursor: pointer;
+}
+
+.contain_children::-webkit-scrollbar {
+    width: 5px;               /* ширина scrollbar */
+  }
+  .contain_children::-webkit-scrollbar-track {
+    background: #282727;        /* цвет дорожки */
+  }
+  .contain_children::-webkit-scrollbar-thumb {
+    background-color: rgba(52, 75, 245, 1);
+    height: 10px;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 0px solid #282727;  /* padding вокруг плашки */
+  }

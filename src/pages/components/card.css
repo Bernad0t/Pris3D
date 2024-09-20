@@ -1,0 +1,36 @@
+.one_card {
+    height: 100%;
+    width: 100%;
+  }
+
+  .one_card_contain img{
+    height: 85%;
+    width: 100%;
+  }
+
+  .one_card_contain{
+    margin-top: 5%;
+    width: 25%;
+    height: 40vh;
+    padding-right: 5%;
+    font-size: 80%;
+      line-height: 1.2em
+  }
+
+  .one_card:hover{
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
+  .notFound{
+    width: 100%;
+    height: 40%;
+  }
+
+  .notFound div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+    margin-top: 10%;
+  }

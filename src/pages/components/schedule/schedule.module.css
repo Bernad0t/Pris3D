@@ -1,0 +1,12 @@
+.kontacts{
+    height: 100%;
+    width: 50%;
+    font-size: 100%;
+    line-height: 1.4em;
+    color: #AFAFAF;
+  }
+  
+  .kontacts h1{
+    color: #FFF;
+    padding-bottom: 2%;
+  }

@@ -1,0 +1,36 @@
+
+.aside{
+    padding-top: 3%;
+    width: 20%;
+    height: 100%;
+    font-size: 110%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4em;
+    position: fixed;
+  }
+
+  .aside::-webkit-scrollbar {
+    width: 0px;               /* ширина scrollbar */
+  }
+  .aside::-webkit-scrollbar-track {
+    background: #282727;        /* цвет дорожки */
+  }
+  .aside::-webkit-scrollbar-thumb {
+    background-color: rgba(52, 75, 245, 1);
+    height: 0px;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 0px solid #282727;  /* padding вокруг плашки */
+  }
+
+.contain_basket{
+    position: absolute;
+    bottom: 20%;
+    height: 50px; /* Высота блока footer */
+    width: 50px;
+}
+
+.contain_basket input{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+
+  .list{
+    transform: rotate(270deg);
+    transition: transform .5s;
+    width: 1em;
+    height: 1em;
+    background-color: #282727;
+  }
+  
+  .row_aside{
+    border-bottom: 1px dashed  #D9D9D9;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  

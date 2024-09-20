@@ -1,0 +1,65 @@
+.logo{
+    display: flex;
+    height: 100%;
+    width: 15%;
+  }
+  
+  .navigate, .contain_login_but{
+    display: flex;
+    align-items: flex-start;
+    height: 60%;
+    width: 60%;
+  }
+  
+  .contain_login_but{
+    width: 10%;
+  }
+
+  .but_nav{
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    border: None;
+    background-color: rgba(255, 255, 255, 0.04);
+    height: 100%;
+  }
+  
+  .login:hover{
+    cursor: pointer;
+  }
+  
+  .but_nav:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.04) , rgba(52, 75, 245, 1) , rgba(52, 75, 245, 1), rgba(255, 255, 255, 0.04));
+  }
+  
+  .first_but_nuv{
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  
+  }
+  
+  .selected_button{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.04), rgba(52, 75, 245, 1), rgba(52, 75, 245, 1), rgba(255, 255, 255, 0.04));
+  }
+  
+  .last_but_nuv{
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  header{
+    display: flex;
+    height: 14vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }

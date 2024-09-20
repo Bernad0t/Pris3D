@@ -1,0 +1,40 @@
+.but_category{
+  margin-right: 1%;
+  height: 13px;
+  width: 13px;
+  border: 1px solid #afafaf;
+}
+
+.but_category:hover{
+  cursor: pointer;
+}
+
+.one_category{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+  
+  .input_filter{
+    margin-top: 1%;
+    padding: 2%;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border: none;
+    border-radius: 10px;
+    padding-left: 5%;
+  }
+  
+  .search{
+    height: 10%;
+    width: 45%;
+    background-color: #D9D9D9;
+    border: None;
+    border-radius: 20px;
+    padding: 1%;
+    color: #000;
+  }
+
+  .search::placeholder{
+    text-align:right; padding-right: 3%; color: #000;
+  }
+  

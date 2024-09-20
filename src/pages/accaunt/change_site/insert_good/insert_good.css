@@ -1,0 +1,27 @@
+summary ~ * {
+    padding:0em 1em 0 1em;
+ }
+ details[open] > details .list {
+   transform: rotateZ(360deg);
+ }
+ details[open] summary ~ *{
+   animation: sweep .5s ease-in-out;
+ }
+ @keyframes sweep {
+   0%    {opacity: 0;}
+   100%  {opacity: 1;}
+ }
+ details{
+   display:block;
+ }
+ summary::-webkit-details-marker{display:none;}
+  summary::-moz-list-bullet{list-style-type:none;}
+  summary::marker{display:none;}
+  summary {
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    display:flex;
+    cursor: pointer;
+    position: relative;
+  }

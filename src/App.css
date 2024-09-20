@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #282727;
+  color: #FFF;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+button:hover{
+  cursor: pointer;
+}

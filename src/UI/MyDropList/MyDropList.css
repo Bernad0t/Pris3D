@@ -1,0 +1,19 @@
+
+  .my_drop_list-transition-enter, .my_drop_list-transition-exit-done{
+    max-height: 0px;
+    overflow: hidden; 
+  }
+  
+  .my_drop_list-transition-enter-active{
+    max-height: 120px; 
+    transition: max-height 300ms ease-in-out;
+  }
+  
+  .my_drop_list-transition-exit, .my_drop_list-transition-enter-done {
+    max-height: 120px; 
+  }
+  
+  .my_drop_list-transition-exit-active {
+    max-height: 0px;
+    transition: max-height 300ms ease-in-out;
+  }

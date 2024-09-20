@@ -1,0 +1,13 @@
+.open{
+    border: none;
+    border-bottom: 1px solid #AFAFAF;
+    border-right: 1px solid #AFAFAF;
+    background-color: #282727;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    transform: rotate(315deg);
+    height: 10px;
+    width: 10px;
+}

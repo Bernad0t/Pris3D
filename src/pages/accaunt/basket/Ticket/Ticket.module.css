@@ -1,0 +1,57 @@
+.priceTicket div span, .resultTicket span{
+    color: #000;
+    background-color: #D9D9D9;
+  }
+  
+  .resultTicket{
+    display: flex;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .priceTicket div{
+    background-color: #D9D9D9;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buyTicket{
+    background-color: #D9D9D9;
+    width: 100%;
+    padding: 20px;
+    max-height: 46vh;
+  }
+  
+  .headerTicket{
+    background-color: #D9D9D9;
+    color: #3C51F3;
+    font-size: 120%;
+    width: 100%;
+  }
+  
+  .priceTicket{
+    background-color: #D9D9D9;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #D1D1D8;
+  }
+
+  .submitPurchase{
+    margin-top: 20px;
+    background-color: #D9D9D9;
+    height: 5vh;
+    width: 100%;
+  }
+
+  .submitPurchase button{
+    height: 100%;
+    width: 100%;
+    border: None;
+    border-radius: 20px;
+  }

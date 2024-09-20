@@ -1,0 +1,26 @@
+
+
+.one-day{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.input-schedule-row{
+    width: 90%;
+    padding: 5%;
+}
+
+.one-schedule{
+	display: flex;
+}
+
+.one-schedule input{
+	background-color: #282727;
+	border: none;
+	height: 100%;
+	border-bottom: 1px solid #AFAFAF;
+	width: 5ch;
+	text-align: center;
+	outline: none
+}

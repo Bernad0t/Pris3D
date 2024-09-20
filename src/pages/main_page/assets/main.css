@@ -1,0 +1,106 @@
+.info{
+    display: flex;
+    width: 100%;
+  }
+  
+  .info_text{
+    font-size: 180%;
+    width: 50%;
+    height: 100%;
+    padding-right: 2%;
+  }
+  
+  .info_text div{
+    font-size: 90%;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .our_benefits{
+    height: 10%;
+    width: 100%;
+  }
+  
+  .benefits{
+    height: 30%;
+    width: 100%;
+    padding-top: 5%;
+    height: 30%;
+    font-size: 180%;
+  }
+  
+  .container_benefits{
+    height: 90%;
+    width: 100%;
+    padding-top: 2%;
+  }
+  
+  .container_discription_benefits{
+    display: flex;
+    justify-content: space-around;
+    height: 78%;
+    width: 100%;
+    padding-top: 2%;
+    font-size: 60%;
+  }
+  
+  .container_names_benefits{
+    height: 18%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .container_names_benefits div{
+    font-size: 80%;
+    width: 25%;
+  }
+  
+  .discription_benefits{
+    padding: 2%;
+    font-size: 80%;
+    height: 100%;
+    width: 25%;
+  }
+  .container_discription_benefits div{
+    color: #AFAFAF;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 25%;
+  }
+  
+  .grafic{
+    width: 50%;
+    padding: 2%;
+    padding-bottom: 0%;
+    border-radius: 20px;
+    background: linear-gradient(#FC8E51, #FA61F9);
+  }
+  
+  .grafic img{
+    height: 100%;
+    width: 75%;
+    background: #003;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  main{
+    width: 100%;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  
+  footer{
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  

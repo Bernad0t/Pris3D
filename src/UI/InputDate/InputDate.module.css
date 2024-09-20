@@ -1,0 +1,9 @@
+.input{
+    width: 30%;
+    border: none;
+    border-bottom: 1px solid #AFAFAF;
+}
+
+.input::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}

@@ -1,0 +1,42 @@
+.modal {
+    min-height: 40%;
+    max-height: 70%;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    text-align: center;
+    width: 30%;
+    z-index: 1040;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    border: 2px solid #AFAFAF;
+  }
+
+  .modal::-webkit-scrollbar {
+    width: 0px;               /* ширина scrollbar */
+  }
+  .modal::-webkit-scrollbar-track {
+    background: #282727;        /* цвет дорожки */
+  }
+  .modal::-webkit-scrollbar-thumb {
+    background-color: #282727;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 0px solid #282727;  /* padding вокруг плашки */
+  }
+
+  .backdrop {
+    position: fixed;
+    z-index: 1040;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.5;
+  }

@@ -1,0 +1,47 @@
+.part_replies{
+    height: 36%;
+    width: 100%;
+    padding-top: 3%;
+  }
+  
+  .text_repl{
+    height: 10%;
+    width: 100%;
+    padding-bottom: 1%;
+  }
+  
+  .container_repl{
+    justify-content: space-between;
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .replies{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 32%;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.12);
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .replies div{
+    height: 80%;
+    width: 90%;
+  }
+  
+  .contain_check_repl_but{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+  }
+  
