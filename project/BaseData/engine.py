@@ -1,5 +1,5 @@
 import asyncio
-from asyncio import WindowsSelectorEventLoopPolicy
+# from asyncio import WindowsSelectorEventLoopPolicy
 from typing import Annotated
 from sqlalchemy import String
 from sqlalchemy.exc import SQLAlchemyError
@@ -10,7 +10,7 @@ from typing_extensions import AsyncGenerator
 # Загружаем информацию о бд из config.py
 from config import settings
 
-asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 
 # Создаем асинхронный движок для подключения к postgres
 async_engine = create_async_engine(
